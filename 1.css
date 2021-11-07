@@ -1,0 +1,103 @@
+:root{
+  --blue:#0188DF;
+  --black:#354046;
+  --white:#fff;
+}
+body{
+    margin-top:20px;
+    background-color:#808080;
+}
+.main{
+    padding:15px;
+    font-family:Arial,Helvetica,sans-serif;
+}
+.topbar{
+    background-color:#90EE90;
+    overflow:hidden;
+}
+.topbar a{
+    float:right;
+    color:#FFFFFF;
+    text-align:center;
+    padding:20px 26px;
+    text-decoration:none;
+    font-size:26px;
+}
+.sidebar{
+    background-color:#000000;
+    color:#FFFFFF;
+    height:100%;
+}
+.sidebar a{
+    margin-left:10px;
+    display:block;
+    color:#FFFFFF;
+    padding-bottom:20px;
+    font-size:30px;
+    text-decoration:none;
+}
+.sidebar h3{
+    padding-bottom:0.5rem;
+    color:var(--blue);
+    font-size:25px;
+}
+.card{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+}
+.content{
+    background-color:#FFFFFF;
+    padding:1.5rem;
+}
+.button{
+  height:3.5rem;
+  width:15rem;
+  background:var(--blue);
+  color:#fff;
+  font-size:1rem;
+  text-transform:capitalize;
+  border-radius:5rem;
+  cursor:pointer;
+  position:relative;
+  z-index:0;
+  overflow: hidden;
+  margin-left:15rem;
+  margin-bottom:-5rem;
+
+}
+
+.button::before{
+  content:'';
+  position: absolute;
+  top: -100%; left: 0;
+  height:100%;
+  width:100%;
+  background-color: var(--black);
+  z-index: -1;
+  transition: .2s linear;
+}
+
+.button:hover:before{
+  top: 0%;
+}
+
+.button:hover{
+ box-shadow: .1rem .5rem var(--blue),
+             0 .3rem .5rem rgba(0,0,0,.3);
+}
+inputBox input,select{
+ width:100%;
+}
+inputBox{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+
+}
+
+.inputBox input,select{
+  width: 100%;
+  form-size:1.7rem;
+  color:var(--black);
+}
